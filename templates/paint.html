@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}" />
+    <title>Paint</title>
+</head>
+<body>
+	<div id="wrapper">
+	<header>
+	
+	<h1>Paint</h1>
+	
+	<nav>
+		 
+		<label> menu
+		<input type="checkbox" />
+		<span class="space">	
+		<a> home </a>
+		<a href="{{ url_for('request') }}"> request </a>
+		<a> paint </a>
+		<a href="{{ url_for('Works') }}"> works </a>
+		<a href="{{ url_for('consultation') }}"> consultation </a>
+		</span>
+		</label>
+		
+
+	</nav> 
+	</header>
+	
+	<main>
+	
+	<h2> Our selections </h2>
+	
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rhoncus nulla. Proin tincidunt nibh turpis, sed cursus elit vehicula iaculis. Phasellus viverra ac odio sit amet placerat. Aliquam erat volutpat. Donec maximus nulla at tellus aliquet, id efficitur nunc laoreet. Nunc ac egestas erat, sit amet porttitor dui. Sed purus sem, tempor iaculis risus et, venenatis hendrerit sem. Morbi pulvinar eros nec orci vulputate, id tristique turpis tincidunt. Cras ligula quam, imperdiet in venenatis id, auctor vel dui. Donec ultrices sem ut viverra malesuada. Phasellus at erat diam. Donec fermentum ligula eget accumsan commodo. Mauris iaculis tincidunt metus, quis faucibus nisl porta eu. </p>
+	
+	</main>
+
+	<footer>
+		<a href="mailto:erickherediamarqeu@lewis.edu"> test email </a>
+	</footer>
+	</div>
+</body>
+</html>
