@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}" />
+    <title>Talk to you soon</title>
+</head>
+<body>
+    <div id="wrapper">
+
+    <header>
+
+    <h1>All done</h1>
+
+	<nav>
+
+		 
+		<label> menu
+		<input type="checkbox" />
+		<span class="space">	
+		<a href="{{ url_for('home') }}"> home </a>
+		<a> request </a>
+		<a href="{{ url_for('paint') }}"> paint </a>
+		<a href="{{ url_for('Works') }}"> works </a>
+		<a href="{{ url_for('consultation') }}"> consultation </a>
+		</span>
+		</label>
+		
+
+	</nav> 
+    </header>
+
+    <main>
+    <h2>We will reach out in as soon as possible. Thank you {{fullname}}</h2>
+	
+	<h4> Name: {{fullname}} </h4>
+	<h4> Email: {{email}} </h4>
+	<h4> Phone Number: {{phone}} </h4>
+	<h4> </h4>
+	<h4> </h4>
+	<h4> </h4>
+	<h4> </h4>
+	<h4> </h4>
+	
+	</main>>
+	
+
+
+	
+
+    </div>
+</body>
+</html>

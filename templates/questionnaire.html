@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>request</title>
+	<link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+	<div id="wrapper">
+
+	<header>
+			
+	<h1>request</h1>
+	
+	<nav>
+
+		 
+		<label> menu
+		<input type="checkbox" />
+		<span class="space">	
+		<a href="{{ url_for('home') }}"> home </a>
+		<a> request </a>
+		<a href="{{ url_for('paint') }}"> paint </a>
+		<a href="{{ url_for('Works') }}"> works </a>
+		<a href="{{ url_for('consultation') }}"> consultation </a>
+		</span>
+		</label>
+		
+
+	</nav> 
+	</header>
+	<main>
+	
+	<h2> Please answer these questions </h2>
+	
+	
+	<form method="post" action="/client_request/questionnaire">
+		
+			<h3> Basic Information </h3>
+			<label for="FirstName"> Full Name </label>
+			<input type="text" name="FullName" id="FullName" required="required"/>
+			
+			<label for="Email"> E-mail </label>
+			<input type="email" name="Email" id="Email" required="required"/>
+			
+			<label for="Phone"> Phone </label>
+			<input type="text" name="Phone" id="Phone" required="required"/>
+			
+			<h3> location </h3>
+			<label>outdoors</label> <br>
+			<input type="radio" name="location" id="outdoors" value="outdoors" required="required"/>
+			<label>indoors</label><br>
+			<input type="radio" name="location" id="indoors" value="indoors"  required="required"/><br>
+			
+	
+			<h3>What do you need painted</h3><br>
+			
+			<label>indoors</label><br>
+			<input type=checkbox name=paint id="house" value="house"/>
+			<label>indoors</label><br>
+			<input type=checkbox name=paint id="rooms" value="rooms"/>
+			<label>indoors</label><br>
+			<input type=checkbox name=paint id="sheds" value="sheds"/>
+			<label>indoors</label><br>
+			<input type=checkbox name=paint id="other" value="other"/>
+			
+			<h3>Condition of your paint</h3><br>
+			
+			<label>indoors</label><br>
+			<input type=checkbox name=condition id="Peeling" value="Peeling"/>
+			<label>indoors</label><br>
+			<input type=checkbox name=condition id="Cracking" value="Cracking"/>
+			<label>indoors</label><br>
+			<input type=checkbox name=condition id="Bubbling " value="Bubbling"/>
+			<label>indoors</label><br>
+			<input type=checkbox name=condition id="Damaged " value="Damaged "/>
+			<label>indoors</label><br>
+			<input type=checkbox name=condition id="Exposed materials" value="Exposed materials"/>
+			<label>indoors</label><br>
+			<input type=checkbox name=condition id="other" value="other"/>
+			
+			<h3>Do need us to move furniture</h3><br>
+			
+			<label>indoors</label><br>
+			<input type="radio" name="furniture" id="yes" value="yes"  required="required"/><br>
+			<label>indoors</label><br>
+			<input type="radio" name="furniture" id="no" value="no"  required="required"/><br>
+			
+
+		
+			<input id="submit" type="submit" value="submit"/>
+				
+		</form>
+	
+	</main>
+	<footer>
+		<a href="mailto:erickherediamarqeu@lewis.edu"> test email </a>
+	</footer>
+	</div>
+</body>
+</html>
+
