@@ -24,12 +24,14 @@ def questionnaire():
         phone = request.form.get("Phone")
 
 
+        email_context={"fullname":fullname,"email":email,"phone":phone}
+
         yag = yagmail.SMTP("dummytestdev2@gmail.com","pretend there a password here")
-        yag.send(email,'Hello from Yagmail!',fullname)
+        yag.send("dummytestdev2@gmail.com",'Hello!',email_context)
 
 
 
-        return render_template('Message.html', fullname=fullname, email=email, phone=phone )
+        return render_template('Message.html', email_context=email_context )
 
 
 
